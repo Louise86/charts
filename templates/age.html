@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block age %}
+
+<ul>
+{% for boy in boysAges %}
+  <li>{{boy.0}} is {{ boy.1 }} </li>
+{% endfor %}
+</ul>
+{% endblock %}

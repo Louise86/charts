@@ -61,9 +61,12 @@
     </style>
 </head>
 <body>
-    <!-- Include more content here or below the chart, using Flask / Jinja. -->
-    <div id="content">
-        <h1>Foobars frobnicated in the past 7 days</h1>
-        <div id="chart_div"></div>
-    </div>
+
+
+{% block chart %}{% endblock %}
+
+{% block quote %}{% endblock %}
+
+{% block age %}{% endblock %}
+
 </body>
